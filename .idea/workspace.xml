@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9ef2ae4f-f89c-458a-b1f3-5026560bdb9c" name="Default Changelist" comment="CouponProjectSpring">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Daniel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_4_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_3_11_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_23_2_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_18_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CouponsSpringWeb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/project/web/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/project/web/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/project/web/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coupon/project/web/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/CouponcrojectspringApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CompanyDBDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CompanyRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CouponDBDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CouponRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CustomerDBDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/DB/CustomerRepo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/companyExistsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/companyNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/couponAlreadyInUseException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/couponAlreadyPurchasedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/couponDateExpired.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/couponNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/Exceptions/invalidAmountException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/beans/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/beans/Company.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/beans/Coupon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/beans/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/facades/AdminFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/facades/ClientFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/facades/CompanyFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/facades/CustomerFacade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/facades/ExpiredCouponDelete.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/login/ClientType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/login/InvalidClientTypeException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/login/LoginFailedException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/login/LoginManger$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/login/LoginManger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/web/AdminController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/web/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/web/Session.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/coupon/project/web/WebConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/coupon/project/CouponcrojectspringApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/coupon/project/CouponcrojectspringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/coupon/project/CouponcrojectspringApplication.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CouponsSpringWeb" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel_Shatz" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1R6YW8iApr1zmxWFjZt2XtvIlFP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41306347" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="coupon.project.Exceptions" />
+      <recent name="coupon.project.facades" />
+      <recent name="coupon.project.login" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Date" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CouponcrojectspringApplication">
+    <configuration name="CustomerFacade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="coupon.project.facades.CustomerFacade" />
+      <module name="CouponsSpringWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon.project.Exceptions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponcrojectspringApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CouponsSpringWeb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="coupon.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="coupon.project" />
+      <option name="MAIN_CLASS_NAME" value="coupon.project.CouponcrojectspringApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CouponcrojectspringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CouponsSpringWeb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="coupon.project.CouponcrojectspringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CustomerFacade" />
+        <item itemvalue="JUnit.CouponcrojectspringApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9ef2ae4f-f89c-458a-b1f3-5026560bdb9c" name="Default Changelist" comment="" />
+      <created>1568989041072</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568989041072</updated>
+      <workItem from="1568989043508" duration="7523000" />
+      <workItem from="1568997793774" duration="7000" />
+      <workItem from="1568998093035" duration="764000" />
+      <workItem from="1569218570081" duration="6260000" />
+      <workItem from="1569243486794" duration="921000" />
+      <workItem from="1569317851245" duration="7528000" />
+      <workItem from="1569391464984" duration="4768000" />
+      <workItem from="1569405856128" duration="1202000" />
+      <workItem from="1569409905420" duration="4468000" />
+      <workItem from="1569511074968" duration="10113000" />
+      <workItem from="1570001858430" duration="12378000" />
+      <workItem from="1570427968605" duration="1446000" />
+      <workItem from="1570447439294" duration="2619000" />
+      <workItem from="1570804966525" duration="438000" />
+      <workItem from="1570883705614" duration="1084000" />
+      <workItem from="1570884825863" duration="1382000" />
+      <workItem from="1571088184072" duration="156000" />
+      <workItem from="1572546183054" duration="14000" />
+      <workItem from="1572801134667" duration="4832000" />
+      <workItem from="1572807911486" duration="256000" />
+      <workItem from="1572850574714" duration="263000" />
+      <workItem from="1572850866806" duration="856000" />
+      <workItem from="1572958884457" duration="133000" />
+      <workItem from="1572963107267" duration="9218000" />
+      <workItem from="1573041490116" duration="22000" />
+      <workItem from="1573044255110" duration="12000" />
+      <workItem from="1573075254460" duration="6739000" />
+      <workItem from="1573227207134" duration="427000" />
+      <workItem from="1573456068420" duration="3325000" />
+      <workItem from="1573467563911" duration="1091000" />
+      <workItem from="1573474521093" duration="4589000" />
+      <workItem from="1573545687637" duration="6316000" />
+      <workItem from="1573581531578" duration="1261000" />
+      <workItem from="1573630528162" duration="6277000" />
+      <workItem from="1573807433382" duration="14295000" />
+      <workItem from="1573900729858" duration="2086000" />
+      <workItem from="1573902841708" duration="80000" />
+      <workItem from="1573902941149" duration="12401000" />
+      <workItem from="1573933724578" duration="1276000" />
+      <workItem from="1573987669277" duration="704000" />
+      <workItem from="1573995079201" duration="2611000" />
+      <workItem from="1573999617580" duration="708000" />
+      <workItem from="1574003815544" duration="783000" />
+      <workItem from="1574007734532" duration="8000" />
+      <workItem from="1574009187062" duration="47000" />
+      <workItem from="1574060296131" duration="307000" />
+      <workItem from="1574060728657" duration="178000" />
+      <workItem from="1574076962537" duration="3440000" />
+      <workItem from="1574081236676" duration="509000" />
+      <workItem from="1574096270152" duration="116000" />
+      <workItem from="1574096399633" duration="31000" />
+      <workItem from="1574108146731" duration="268000" />
+      <workItem from="1574108609571" duration="394000" />
+      <workItem from="1574109027452" duration="745000" />
+      <workItem from="1574109795740" duration="218000" />
+      <workItem from="1574110037295" duration="225000" />
+      <workItem from="1574233739453" duration="344000" />
+      <workItem from="1574240741653" duration="617000" />
+      <workItem from="1574257607342" duration="62000" />
+      <workItem from="1574503181409" duration="138000" />
+      <workItem from="1574503345677" duration="849000" />
+      <workItem from="1574522038039" duration="11107000" />
+      <workItem from="1574586161922" duration="362000" />
+      <workItem from="1574604821394" duration="573000" />
+      <workItem from="1574605415742" duration="496000" />
+      <workItem from="1574606784471" duration="163000" />
+      <workItem from="1574608136088" duration="13122000" />
+      <workItem from="1574628551594" duration="1482000" />
+      <workItem from="1574665370073" duration="5850000" />
+      <workItem from="1574682934732" duration="2944000" />
+      <workItem from="1574686782535" duration="3317000" />
+      <workItem from="1574700645625" duration="2918000" />
+      <workItem from="1574764607567" duration="16000" />
+      <workItem from="1574764652171" duration="12000" />
+      <workItem from="1574955270648" duration="5966000" />
+      <workItem from="1574961598778" duration="10617000" />
+    </task>
+    <task id="LOCAL‎00001" summary="CouponProjectSpring">
+      <created>1570020686384</created>
+      <option name="number" value="LOCAL‎00001" />
+      <option name="presentableId" value="LOCAL‎00001" />
+      <updated>1570020686384</updated>
+    </task>
+    <task id="LOCAL‎00002" summary="CouponProjectSpring">
+      <created>1570021053474</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1570021053474</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="CouponProjectSpring">
+      <created>1570805197780</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1570805197780</updated>
+    </task>
+    <task id="LOCAL‎00004" summary="CouponProjectSpring">
+      <created>1572850984651</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1572850984651</updated>
+    </task>
+    <task id="LOCAL‎00005" summary="CouponProjectSpring">
+      <created>1572851702749</created>
+      <option name="number" value="LOCAL‎00005" />
+      <option name="presentableId" value="LOCAL‎00005" />
+      <updated>1572851702749</updated>
+    </task>
+    <task id="LOCAL‎00006" summary="CouponProjectSpring">
+      <created>1572971771259</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1572971771259</updated>
+    </task>
+    <task id="LOCAL‎00007" summary="CouponProjectSpring">
+      <created>1572972194877</created>
+      <option name="number" value="LOCAL‎00007" />
+      <option name="presentableId" value="LOCAL‎00007" />
+      <updated>1572972194877</updated>
+    </task>
+    <task id="LOCAL‎00008" summary="CouponProjectSpring">
+      <created>1572972295353</created>
+      <option name="number" value="LOCAL‎00008" />
+      <option name="presentableId" value="LOCAL‎00008" />
+      <updated>1572972295353</updated>
+    </task>
+    <task id="LOCAL‎00009" summary="CouponProjectSpring">
+      <created>1572972340600</created>
+      <option name="number" value="LOCAL‎00009" />
+      <option name="presentableId" value="LOCAL‎00009" />
+      <updated>1572972340600</updated>
+    </task>
+    <task id="LOCAL‎00010" summary="CouponProjectSpring">
+      <created>1573081995365</created>
+      <option name="number" value="LOCAL‎00010" />
+      <option name="presentableId" value="LOCAL‎00010" />
+      <updated>1573081995365</updated>
+    </task>
+    <task id="LOCAL‎00011" summary="CouponProjectSpring">
+      <created>1573464077983</created>
+      <option name="number" value="LOCAL‎00011" />
+      <option name="presentableId" value="LOCAL‎00011" />
+      <updated>1573464077983</updated>
+    </task>
+    <task id="LOCAL‎00012" summary="CouponProjectSpring">
+      <created>1573464178702</created>
+      <option name="number" value="LOCAL‎00012" />
+      <option name="presentableId" value="LOCAL‎00012" />
+      <updated>1573464178702</updated>
+    </task>
+    <task id="LOCAL‎00013" summary="CouponProjectSpring">
+      <created>1573481798287</created>
+      <option name="number" value="LOCAL‎00013" />
+      <option name="presentableId" value="LOCAL‎00013" />
+      <updated>1573481798287</updated>
+    </task>
+    <task id="LOCAL‎00014" summary="CouponProjectSpring">
+      <created>1573581690154</created>
+      <option name="number" value="LOCAL‎00014" />
+      <option name="presentableId" value="LOCAL‎00014" />
+      <updated>1573581690154</updated>
+    </task>
+    <task id="LOCAL‎00015" summary="CouponProjectSpring">
+      <created>1573636175937</created>
+      <option name="number" value="LOCAL‎00015" />
+      <option name="presentableId" value="LOCAL‎00015" />
+      <updated>1573636175937</updated>
+    </task>
+    <task id="LOCAL‎00016" summary="CouponProjectSpring">
+      <created>1573650360469</created>
+      <option name="number" value="LOCAL‎00016" />
+      <option name="presentableId" value="LOCAL‎00016" />
+      <updated>1573650360469</updated>
+    </task>
+    <task id="LOCAL‎00017" summary="CouponProjectSpring">
+      <created>1573654872998</created>
+      <option name="number" value="LOCAL‎00017" />
+      <option name="presentableId" value="LOCAL‎00017" />
+      <updated>1573654872998</updated>
+    </task>
+    <task id="LOCAL‎00018" summary="CouponProjectSpring">
+      <created>1573811908609</created>
+      <option name="number" value="LOCAL‎00018" />
+      <option name="presentableId" value="LOCAL‎00018" />
+      <updated>1573811908609</updated>
+    </task>
+    <task id="LOCAL‎00019" summary="CouponProjectSpring">
+      <created>1573834680475</created>
+      <option name="number" value="LOCAL‎00019" />
+      <option name="presentableId" value="LOCAL‎00019" />
+      <updated>1573834680475</updated>
+    </task>
+    <task id="LOCAL‎00020" summary="CouponProjectSpring">
+      <created>1573924683378</created>
+      <option name="number" value="LOCAL‎00020" />
+      <option name="presentableId" value="LOCAL‎00020" />
+      <updated>1573924683378</updated>
+    </task>
+    <task id="LOCAL‎00021" summary="CouponProjectSpring">
+      <created>1573934959341</created>
+      <option name="number" value="LOCAL‎00021" />
+      <option name="presentableId" value="LOCAL‎00021" />
+      <updated>1573934959341</updated>
+    </task>
+    <task id="LOCAL‎00022" summary="CouponProjectSpring">
+      <created>1574060581225</created>
+      <option name="number" value="LOCAL‎00022" />
+      <option name="presentableId" value="LOCAL‎00022" />
+      <updated>1574060581225</updated>
+    </task>
+    <task id="LOCAL‎00023" summary="CouponProjectSpring">
+      <created>1574060773662</created>
+      <option name="number" value="LOCAL‎00023" />
+      <option name="presentableId" value="LOCAL‎00023" />
+      <updated>1574060773662</updated>
+    </task>
+    <task id="LOCAL‎00024" summary="CouponProjectSpring">
+      <created>1574257656368</created>
+      <option name="number" value="LOCAL‎00024" />
+      <option name="presentableId" value="LOCAL‎00024" />
+      <updated>1574257656369</updated>
+    </task>
+    <task id="LOCAL‎00025" summary="CouponProjectSpring">
+      <created>1574534760457</created>
+      <option name="number" value="LOCAL‎00025" />
+      <option name="presentableId" value="LOCAL‎00025" />
+      <updated>1574534760457</updated>
+    </task>
+    <task id="LOCAL‎00026" summary="CouponProjectSpring">
+      <created>1574608287334</created>
+      <option name="number" value="LOCAL‎00026" />
+      <option name="presentableId" value="LOCAL‎00026" />
+      <updated>1574608287335</updated>
+    </task>
+    <task id="LOCAL‎00027" summary="CouponProjectSpring">
+      <created>1574613669958</created>
+      <option name="number" value="LOCAL‎00027" />
+      <option name="presentableId" value="LOCAL‎00027" />
+      <updated>1574613669959</updated>
+    </task>
+    <task id="LOCAL‎00028" summary="CouponProjectSpring">
+      <created>1574625060379</created>
+      <option name="number" value="LOCAL‎00028" />
+      <option name="presentableId" value="LOCAL‎00028" />
+      <updated>1574625060379</updated>
+    </task>
+    <task id="LOCAL‎00029" summary="CouponProjectSpring">
+      <created>1574629762609</created>
+      <option name="number" value="LOCAL‎00029" />
+      <option name="presentableId" value="LOCAL‎00029" />
+      <updated>1574629762609</updated>
+    </task>
+    <task id="LOCAL‎00030" summary="CouponProjectSpring">
+      <created>1574630025507</created>
+      <option name="number" value="LOCAL‎00030" />
+      <option name="presentableId" value="LOCAL‎00030" />
+      <updated>1574630025507</updated>
+    </task>
+    <task id="LOCAL‎00031" summary="CouponProjectSpring">
+      <created>1574667510413</created>
+      <option name="number" value="LOCAL‎00031" />
+      <option name="presentableId" value="LOCAL‎00031" />
+      <updated>1574667510413</updated>
+    </task>
+    <task id="LOCAL‎00032" summary="CouponProjectSpring">
+      <created>1574667571243</created>
+      <option name="number" value="LOCAL‎00032" />
+      <option name="presentableId" value="LOCAL‎00032" />
+      <updated>1574667571243</updated>
+    </task>
+    <task id="LOCAL‎00033" summary="CouponProjectSpring">
+      <created>1574677564072</created>
+      <option name="number" value="LOCAL‎00033" />
+      <option name="presentableId" value="LOCAL‎00033" />
+      <updated>1574677564072</updated>
+    </task>
+    <task id="LOCAL‎00034" summary="CouponProjectSpring">
+      <created>1574686429940</created>
+      <option name="number" value="LOCAL‎00034" />
+      <option name="presentableId" value="LOCAL‎00034" />
+      <updated>1574686429940</updated>
+    </task>
+    <task id="LOCAL‎00035" summary="CouponProjectSpring">
+      <created>1574703397894</created>
+      <option name="number" value="LOCAL‎00035" />
+      <option name="presentableId" value="LOCAL‎00035" />
+      <updated>1574703397894</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="CouponProjectSpring" />
+    <option name="LAST_COMMIT_MESSAGE" value="CouponProjectSpring" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="845" y="166" key="#Deployment" timestamp="1574972010839">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="845" y="166" key="#Deployment/0.0.2560.1400@0.0.2560.1400" timestamp="1574972010839" />
+    <state x="401" y="344" key="#com.intellij.ide.util.MemberChooser" timestamp="1574970591567">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="401" y="344" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1574970591567" />
+    <state x="644" y="114" width="1507" height="970" key="CommitChangelistDialog2" timestamp="1574972034833">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="644" y="114" width="1507" height="970" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1574972034833" />
+    <state x="377" y="390" key="FileChooserDialogImpl" timestamp="1574971864127">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="377" y="390" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1574971864127" />
+    <state width="2505" height="320" key="GridCell.Tab.0.bottom" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.0.center" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.0.left" timestamp="1574971418611">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418611" />
+    <state width="2505" height="320" key="GridCell.Tab.0.right" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.1.bottom" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.1.center" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.1.left" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state width="2505" height="320" key="GridCell.Tab.1.right" timestamp="1574971418612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="320" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1574971418612" />
+    <state x="57" y="268" key="Maven.ArtifactSearchDialog" timestamp="1574963192508">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="57" y="268" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1574963192508" />
+    <state x="632" y="162" key="SettingsEditor" timestamp="1574972308837">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="632" y="162" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1574972308837" />
+    <state x="772" y="360" key="Vcs.Push.Dialog.v2" timestamp="1574972402573">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="772" y="360" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1574972402573" />
+    <state x="258" y="472" key="com.intellij.ide.util.TipDialog" timestamp="1574961600117">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="258" y="472" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1574961600117" />
+    <state x="989" y="437" key="git4idea.merge.GitPullDialog" timestamp="1574972377771">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="989" y="437" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1574972377771" />
+    <state x="550" y="202" key="new project wizard" timestamp="1574972075632">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="550" y="202" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1574972075632" />
+  </component>
+</project>
