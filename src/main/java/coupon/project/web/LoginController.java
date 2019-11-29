@@ -23,7 +23,8 @@ public class LoginController {
     private LoginManger loginManger;
 
     @PostMapping("/login/{email}/{password}/{type}")
-    public String login(@PathVariable String email, @PathVariable String password, @PathVariable ClientType type) throws InvalidClientTypeException, LoginFailedException {
+    public String login(@PathVariable String email, @PathVariable String password, @PathVariable ClientType type)
+            throws InvalidClientTypeException, LoginFailedException {
 
         String token = UUID.randomUUID().toString();
 

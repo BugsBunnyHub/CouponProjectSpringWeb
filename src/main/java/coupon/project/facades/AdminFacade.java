@@ -34,8 +34,8 @@ public class AdminFacade extends ClientFacade {
         return companyDB.getAllCompanies();
     }
 
-    public void findOneCompany(int id) {
-        companyDB.findOneCompany(id);
+    public Company findOneCompany(int id) {
+        return companyDB.findOneCompany(id);
     }
 
     public Company isCompanyExists(String email, String password) {
@@ -78,8 +78,8 @@ public class AdminFacade extends ClientFacade {
         return customerDB.isCustomerEmailExists(email);
     }
 
-    public void findCustomerById(int id) {
-        customerDB.findOneCustomer(id);
+    public Customer findCustomerById(int id) {
+        return customerDB.findOneCustomer(id);
     }
 
 

@@ -1,5 +1,6 @@
 package coupon.project.beans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -36,9 +37,9 @@ public class Coupon {
     private String image;
     @Column(name = "category")
     private Category category;
-    @Column(name = "startDate")
+    @Column(name = "start_Date")
     private Date startDate;
-    @Column(name = "endDate")
+    @Column(name = "end_Date")
     private Date endDate;
     @Column(name = "price")
     private double price;
@@ -68,10 +69,11 @@ public class Coupon {
         this.id = id;
     }
 
+    //@JsonIgnore needs to be used to fix stackoverflow(infinity loop)
+    @JsonIgnore
     public Company getCompanyID() {
         return companyID;
     }
-
 
     public int getAmount() {
         return amount;
