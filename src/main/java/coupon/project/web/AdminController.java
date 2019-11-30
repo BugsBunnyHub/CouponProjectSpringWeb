@@ -71,12 +71,11 @@ public class AdminController {
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
         }
-
     }
 
     //delete company
     @DeleteMapping("/deleteCompany/{id}/{token}")
-    public ResponseEntity<Object> deleteCompany(@PathVariable String token, @RequestParam int id) {
+    public ResponseEntity<Object> deleteCompany(@PathVariable String token, @PathVariable int id) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -87,6 +86,8 @@ public class AdminController {
                     //delete method doesn't return anything there is no need to use .ok , a better option is
                     //to use .noContent
                     return ResponseEntity.noContent().build();
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {
                     //restart session timer after action is done by the user
                     session.setLastActionTimer(System.currentTimeMillis());
@@ -126,7 +127,7 @@ public class AdminController {
 
     //get one company
     @GetMapping("/findCompanyById/{id}/{token}")
-    public ResponseEntity<Object> findCompanyById(@PathVariable String token, @RequestParam int id) {
+    public ResponseEntity<Object> findCompanyById(@PathVariable String token, @PathVariable int id) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -150,7 +151,7 @@ public class AdminController {
 
     //check if company exist
     @GetMapping("/isCompanyExist/{email}/{password}/{token}")
-    public ResponseEntity<Object> isCompanyExist(@PathVariable String token, @RequestParam String email, @RequestParam String password) {
+    public ResponseEntity<Object> isCompanyExist(@PathVariable String token, @PathVariable String email, @PathVariable String password) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -176,7 +177,7 @@ public class AdminController {
 
     //find company by email
     @GetMapping("/findCompanyByEmail/{email}/{token}")
-    public ResponseEntity<Object> findCompanyByEmail(@PathVariable String token, @RequestParam String email) {
+    public ResponseEntity<Object> findCompanyByEmail(@PathVariable String token, @PathVariable String email) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -202,7 +203,7 @@ public class AdminController {
 
     //find company by name
     @GetMapping("/findCompanyByName/{name}/{token}")
-    public ResponseEntity<Object> findCompanyByName(@PathVariable String token, @RequestParam String name) {
+    public ResponseEntity<Object> findCompanyByName(@PathVariable String token, @PathVariable String name) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -255,7 +256,7 @@ public class AdminController {
 
     //delete customer
     @DeleteMapping("/deleteCustomer/{id}/{token}")
-    public ResponseEntity<Object> deleteCustomer(@PathVariable String token, @RequestParam int id) {
+    public ResponseEntity<Object> deleteCustomer(@PathVariable String token, @PathVariable int id) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -266,6 +267,8 @@ public class AdminController {
                     //delete method doesn't return anything there is no need to use .ok , a better option is
                     //to use .noContent
                     return ResponseEntity.noContent().build();
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {
                     //restart session timer after action is done by the user
                     session.setLastActionTimer(System.currentTimeMillis());
@@ -331,7 +334,7 @@ public class AdminController {
 
     //check if customer exist
     @GetMapping("/isCustomerExist/{email}/{password}/{token}")
-    public ResponseEntity<Object> isCustomerExist(@PathVariable String token, @RequestParam String email, @RequestParam String password) {
+    public ResponseEntity<Object> isCustomerExist(@PathVariable String token, @PathVariable String email, @PathVariable String password) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -357,7 +360,7 @@ public class AdminController {
 
     //find customer by email
     @GetMapping("/findCustomerByEmail/{email}/{token}")
-    public ResponseEntity<Object> findCustomerByEmail(@PathVariable String token, @RequestParam String email) {
+    public ResponseEntity<Object> findCustomerByEmail(@PathVariable String token, @PathVariable String email) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -383,7 +386,7 @@ public class AdminController {
 
     //find customer by id
     @GetMapping("/findCustomerById/{id}/{token}")
-    public ResponseEntity<Object> findCustomerById(@PathVariable String token, @RequestParam int id) {
+    public ResponseEntity<Object> findCustomerById(@PathVariable String token, @PathVariable int id) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour

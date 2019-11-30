@@ -54,6 +54,8 @@ public class CompanyFacade extends ClientFacade {
             customer.getCoupons().remove(couponToDelete);
             customerDB.updateCustomer(customer);
         }
+
+        couponDB.deleteCoupon(couponId);
     }
 
     public void updateCoupon(Coupon coupon) throws couponNotFoundException {

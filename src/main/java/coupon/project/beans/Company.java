@@ -1,5 +1,6 @@
 package coupon.project.beans;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -30,7 +31,11 @@ public class Company {
     @Column(name = "password")
     private String password;
     @Column
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "companyID", orphanRemoval = true, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "companyID", orphanRemoval = true, cascade = CascadeType.MERGE)
+    //@JsonBackReference
+    //JsonBackReference is the back part of reference – it will be omitted from serialization
+    //The merge operation copies the state of the given object onto the persistent object with the same identifier
+    // CascadeType.MERGE propagates the merge operation from a parent to a child entity
     //One company can have many coupons
     //EAGER to create the companies as soon as possible
     //MappedBy mapping the in the DB
@@ -90,6 +95,8 @@ public class Company {
         this.password = password;
     }
 
+    @JsonIgnore
+    //@JsonIgnore needs to be used to fix stackoverflow(infinity loop)
     public List<Coupon> getCoupons() {
         return coupons;
     }

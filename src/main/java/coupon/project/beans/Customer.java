@@ -19,10 +19,10 @@ public class Customer {
     // for security better to use UUID.randomUUID() to generate random ID key as String not int
     private int id;
     @NotBlank
-    @Column(name = "firstName")
+    @Column(name = "first_Name")
     private String firstName;
     @NotBlank
-    @Column(name = "lastName")
+    @Column(name = "last_Name")
     private String lastName;
     @NotBlank
     @Column(name = "email", unique = true)//"unique" can be used as a shortcut for UniqueConstraint

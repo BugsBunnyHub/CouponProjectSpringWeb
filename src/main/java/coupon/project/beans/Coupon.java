@@ -1,6 +1,5 @@
 package coupon.project.beans;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -21,6 +20,8 @@ public class Coupon {
     public int id;
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "company_id")
+    //@JsonManagedReference
+    //@JsonManagedReference is the forward part of reference – the one that gets serialized normally.
     private Company companyID;
     @Column(name = "amount")
     /*
@@ -70,7 +71,6 @@ public class Coupon {
     }
 
     //@JsonIgnore needs to be used to fix stackoverflow(infinity loop)
-    @JsonIgnore
     public Company getCompanyID() {
         return companyID;
     }
