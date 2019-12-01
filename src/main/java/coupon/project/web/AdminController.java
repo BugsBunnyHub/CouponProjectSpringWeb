@@ -1,7 +1,5 @@
 package coupon.project.web;
 
-import coupon.project.Exceptions.companyExistsException;
-import coupon.project.Exceptions.companyNotFoundException;
 import coupon.project.beans.Company;
 import coupon.project.beans.Customer;
 import coupon.project.facades.AdminFacade;
@@ -33,7 +31,7 @@ public class AdminController {
                 AdminFacade adminFacade = (AdminFacade) session.getClientFacade();
                 try {
                     return ResponseEntity.ok(adminFacade.addCompany(company));
-                } catch (companyExistsException e) {
+                } catch (Exception e) {
                     return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {
                     //restart session timer after action is done by the user
@@ -59,7 +57,7 @@ public class AdminController {
                 try {
                     adminFacade.updateCompany(company);
                     return ResponseEntity.ok(company);
-                } catch (companyNotFoundException e) {
+                } catch (Exception e) {
                     return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {
                     //restart session timer after action is done by the user

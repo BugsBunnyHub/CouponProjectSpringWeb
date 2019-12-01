@@ -94,5 +94,52 @@ public class CompanyController {
 
     }
 
+    //get one coupon
+    @GetMapping("/findCouponById/{id}/{token}")
+    public ResponseEntity<Object> findCouponById(@PathVariable String token, @PathVariable int id) {
+        Session session = sessionMap.get(token);
+        if (session != null) {
+            //each session lasts 1 hour
+            if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
+                CompanyFacade companyFacade = (CompanyFacade) session.getClientFacade();
+                try {
+                    return ResponseEntity.ok(companyFacade.getOneCoupon(id));
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
+                } finally {
+                    //restart session timer after action is done by the user
+                    session.setLastActionTimer(System.currentTimeMillis());
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session timeout");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
+        }
+    }
+
+    //get company details
+    @GetMapping("/getCompanyDetails/{token}")
+    public ResponseEntity<Object> getCompanyDetails(@PathVariable String token) {
+        Session session = sessionMap.get(token);
+        if (session != null) {
+            //each session lasts 1 hour
+            if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
+                CompanyFacade companyFacade = (CompanyFacade) session.getClientFacade();
+                try {
+                    return ResponseEntity.ok(companyFacade.getCompanyDetails());
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
+                } finally {
+                    //restart session timer after action is done by the user
+                    session.setLastActionTimer(System.currentTimeMillis());
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session timeout");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
+        }
+    }
 
 }

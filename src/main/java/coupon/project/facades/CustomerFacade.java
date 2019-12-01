@@ -50,6 +50,7 @@ public class CustomerFacade extends ClientFacade {
         Customer customer = customerDB.findOneCustomer(customerId);
         customer.getCoupons().remove(coupon);
         customerDB.updateCustomer(customer);
+        couponDB.deleteCoupon(coupon.getId());
     }
 
     private boolean isCouponPurchased(Coupon coupon) {
