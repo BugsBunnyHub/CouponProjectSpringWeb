@@ -118,8 +118,8 @@ public class Customer {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", coupons=" + coupons +
-                '}';
+                ", password='" + password + '\'';
+//                ", coupons=" + coupons +
+//                '}';
     }
 }

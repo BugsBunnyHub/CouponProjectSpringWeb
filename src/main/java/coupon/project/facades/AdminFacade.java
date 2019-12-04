@@ -1,6 +1,5 @@
 package coupon.project.facades;
 
-import coupon.project.Exceptions.companyExistsException;
 import coupon.project.Exceptions.companyNotFoundException;
 import coupon.project.beans.Company;
 import coupon.project.beans.Customer;
@@ -17,7 +16,7 @@ public class AdminFacade extends ClientFacade {
     }
 
     // Company methods
-    public Company addCompany(Company company) throws companyExistsException {
+    public Company addCompany(Company company) {
         companyDB.addCompany(company);
         return company;
     }

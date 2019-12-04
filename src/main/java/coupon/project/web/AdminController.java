@@ -12,17 +12,16 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("admin")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AdminController {
 
     @Autowired
     Map<String, Session> sessionMap;
 
-    //TODO ask Nir what's DTO
-
     ////////////////////////////COMPANY////////////////////////////
 
     //add company
-    @PostMapping("/addCompany/{token}")
+    @PostMapping("/addNewCompany/{token}")
     public ResponseEntity<Object> addNewCompany(@PathVariable String token, @RequestBody Company company) {
         Session session = sessionMap.get(token);
         if (session != null) {
@@ -228,7 +227,7 @@ public class AdminController {
     ////////////////////////////CUSTOMER////////////////////////////
 
     //add customer
-    @PostMapping("/addCustomer/{token}")
+    @PostMapping("/addNewCustomer/{token}")
     public ResponseEntity<Object> addNewCustomer(@PathVariable String token, @RequestBody Customer customer) {
         Session session = sessionMap.get(token);
         if (session != null) {
@@ -407,7 +406,6 @@ public class AdminController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
         }
     }
-
 
 }
 

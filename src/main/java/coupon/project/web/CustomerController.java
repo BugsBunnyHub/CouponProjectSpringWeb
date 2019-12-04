@@ -11,13 +11,13 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("customer")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CustomerController {
 
     @Autowired
     Map<String, Session> sessionMap;
 
 
-    //TODO coupon is added to customer_coupon but amount is set to 0 by json(json not asking for amount)
     //purchaseCoupon
     @PostMapping("/purchaseCoupon/{token}")
     public ResponseEntity<Object> purchaseCoupon(@PathVariable String token, @RequestBody Coupon coupon) {

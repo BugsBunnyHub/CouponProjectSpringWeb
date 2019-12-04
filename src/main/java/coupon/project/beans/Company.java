@@ -22,7 +22,9 @@ public class Company {
     //mapped, GenerationType.IDENTITY ex: ID: 1...2...3
     private int id;
     @NotBlank
-    @Column(name = "name", unique = true) //"unique" can be used as a shortcut for UniqueConstraint
+    @Column(name = "name", unique = true, updatable = false)
+    //"updatable  = false" to not allow admin update the company name
+    //"unique" can be used as a shortcut for UniqueConstraint
     private String name;
     @NotBlank
     @Column(name = "email", unique = true)

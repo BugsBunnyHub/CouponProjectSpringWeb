@@ -48,9 +48,9 @@ public class CustomerFacade extends ClientFacade {
 
     public void deleteCouponPurchase(Coupon coupon) {
         Customer customer = customerDB.findOneCustomer(customerId);
+        System.out.println(customer);
         customer.getCoupons().remove(coupon);
         customerDB.updateCustomer(customer);
-        couponDB.deleteCoupon(coupon.getId());
     }
 
     private boolean isCouponPurchased(Coupon coupon) {
