@@ -18,7 +18,7 @@ public class CompanyController {
     Map<String, Session> sessionMap;
 
     //add coupon
-    @PostMapping("/addCoupon/{token}")
+    @PostMapping("/addNewCoupon/{token}")
     public ResponseEntity<Object> addCoupon(@PathVariable String token, @RequestBody Coupon coupon) {
         Session session = sessionMap.get(token);
         if (session != null) {
@@ -26,6 +26,8 @@ public class CompanyController {
             if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
                 CompanyFacade companyFacade = (CompanyFacade) session.getClientFacade();
                 try {
+                    // set the logged in company ID as company_ID in coupon obj
+                    coupon.setCompanyID(companyFacade.getCompanyDetails());
                     return ResponseEntity.ok(companyFacade.addCoupon(coupon));
                 } catch (Exception e) {
                     return ResponseEntity.badRequest().body(e.getMessage());
@@ -51,6 +53,8 @@ public class CompanyController {
             if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
                 CompanyFacade companyFacade = (CompanyFacade) session.getClientFacade();
                 try {
+                    // set the logged in company ID as company_ID in coupon obj
+                    coupon.setCompanyID(companyFacade.getCompanyDetails());
                     companyFacade.updateCoupon(coupon);
                     return ResponseEntity.ok(coupon);
                 } catch (Exception e) {

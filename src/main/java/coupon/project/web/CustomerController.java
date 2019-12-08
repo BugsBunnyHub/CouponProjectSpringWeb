@@ -43,7 +43,6 @@ public class CustomerController {
         }
     }
 
-    //TODO method works, doesn't delete coupon from customer_coupon DB
     //delete coupon purchase
     @DeleteMapping("/deleteCouponPurchase/{token}")
     public ResponseEntity<Object> deleteCouponPurchase(@PathVariable String token, @RequestBody Coupon coupon) {

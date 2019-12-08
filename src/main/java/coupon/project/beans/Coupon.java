@@ -50,7 +50,8 @@ public class Coupon {
     public Coupon() {
     }
 
-    public Coupon(@NotBlank Company companyID, @NotBlank int amount, @NotBlank String title, String description, String image, Category category, Date startDate, Date endDate, double price) {
+    public Coupon(@NotBlank Company companyID, @NotBlank int amount, @NotBlank String title, String description, String image,
+                  Category category, Date startDate, Date endDate, double price) {
         this.companyID = companyID;
         this.amount = amount;
         this.title = title;
@@ -71,7 +72,11 @@ public class Coupon {
         this.id = id;
     }
 
-    //@JsonIgnore needs to be used to fix stackoverflow(infinity loop)
+    //used for coupon ID set in web
+    public void setCompanyID(Company companyID) {
+        this.companyID = companyID;
+    }
+
     public Company getCompanyID() {
         return companyID;
     }
