@@ -26,7 +26,8 @@ public class CustomerFacade extends ClientFacade {
             return false;
     }
 
-    public void purchaseCoupon(Coupon coupon) throws invalidAmountException, couponAlreadyPurchasedException, couponNotFoundException, couponDateExpired {
+    public void purchaseCoupon(Coupon coupon) throws invalidAmountException, couponAlreadyPurchasedException,
+            couponNotFoundException, couponDateExpired {
         if (coupon.getAmount() == 0) {
             throw new invalidAmountException();
         }
@@ -65,6 +66,10 @@ public class CustomerFacade extends ClientFacade {
 
     public Customer getCustomerDetails() {
         return customerDB.findOneCustomer(customerId);
+    }
+
+    public List<Coupon> getAllCoupons() {
+        return couponDB.getAllCoupons();
     }
 
 }

@@ -94,6 +94,30 @@ public class CustomerController {
         }
     }
 
+    //used for coupon purchase in web
+    @GetMapping("/getAllCoupons/{token}")
+    public ResponseEntity<Object> getAllCoupons(@PathVariable String token) {
+        Session session = sessionMap.get(token);
+        if (session != null) {
+            //each session lasts 1 hour
+            if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
+                CustomerFacade customerFacade = (CustomerFacade) session.getClientFacade();
+                try {
+                    return ResponseEntity.ok(customerFacade.getAllCoupons());
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
+                } finally {
+                    //restart session timer after action is done by the user
+                    session.setLastActionTimer(System.currentTimeMillis());
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session timeout");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
+        }
+    }
+
 
 }
 
