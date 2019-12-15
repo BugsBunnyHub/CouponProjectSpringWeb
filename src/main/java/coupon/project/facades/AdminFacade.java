@@ -2,6 +2,7 @@ package coupon.project.facades;
 
 import coupon.project.Exceptions.companyNotFoundException;
 import coupon.project.beans.Company;
+import coupon.project.beans.Coupon;
 import coupon.project.beans.Customer;
 import org.springframework.stereotype.Service;
 
@@ -81,5 +82,8 @@ public class AdminFacade extends ClientFacade {
         return customerDB.findOneCustomer(id);
     }
 
+    public List<Coupon> getAllCoupons() {
+        return couponDB.getAllCoupons();
+    }
 
 }

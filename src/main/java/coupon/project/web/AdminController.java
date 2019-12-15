@@ -407,6 +407,30 @@ public class AdminController {
         }
     }
 
+    //get all coupons in the DB
+    @GetMapping("/findAllCoupons/{token}")
+    public ResponseEntity<Object> findAllCoupons(@PathVariable String token) {
+        Session session = sessionMap.get(token);
+        if (session != null) {
+            //each session lasts 1 hour
+            if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
+                AdminFacade adminFacade = (AdminFacade) session.getClientFacade();
+                try {
+                    return ResponseEntity.ok(adminFacade.getAllCoupons());
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
+                } finally {
+                    //restart session timer after action is done by the user
+                    session.setLastActionTimer(System.currentTimeMillis());
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session timeout");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
+        }
+    }
+
 }
 
 

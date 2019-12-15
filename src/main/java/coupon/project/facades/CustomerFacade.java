@@ -8,6 +8,7 @@ import coupon.project.beans.Coupon;
 import coupon.project.beans.Customer;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -68,8 +69,24 @@ public class CustomerFacade extends ClientFacade {
         return customerDB.findOneCustomer(customerId);
     }
 
-    public List<Coupon> getAllCoupons() {
-        return couponDB.getAllCoupons();
+    //Just to make it work...
+    public List<Coupon> getCustomerCoupons() {
+        List<Coupon> customersCoupons = new ArrayList<>();
+        List<Customer> customers = customerDB.getAllCustomers();
+        List<Coupon> coupons = couponDB.getAllCoupons();
+        for (Customer cus : customers) {
+            List<Coupon> nums = customerDB.findOneCustomer(cus.getId()).getCoupons();
+            for (Coupon c : nums) {
+                for (Coupon coupon : coupons) {
+                    if (cus.getId() == customerId) {
+                        if (c.getId() == coupon.getId())
+                            customersCoupons.add(coupon);
+                    }
+                }
+            }
+
+        }
+        return customersCoupons;
     }
 
 }

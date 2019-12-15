@@ -95,7 +95,7 @@ public class CustomerController {
     }
 
     //used for coupon purchase in web
-    @GetMapping("/getAllCoupons/{token}")
+    @GetMapping("/getCustomerCoupons/{token}")
     public ResponseEntity<Object> getAllCoupons(@PathVariable String token) {
         Session session = sessionMap.get(token);
         if (session != null) {
@@ -103,7 +103,7 @@ public class CustomerController {
             if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
                 CustomerFacade customerFacade = (CustomerFacade) session.getClientFacade();
                 try {
-                    return ResponseEntity.ok(customerFacade.getAllCoupons());
+                    return ResponseEntity.ok(customerFacade.getCustomerCoupons());
                 } catch (Exception e) {
                     return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {

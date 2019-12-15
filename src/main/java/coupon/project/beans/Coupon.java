@@ -27,7 +27,7 @@ public class Coupon {
     @Column(name = "amount")
     /*
       @Min, @Max works for int @Size works for String/collection
-     * @NotBlank best of all options for empty/invalid input checks
+     * @NotBlank best of all options for empty/invalid input checks of String
      */
     private int amount;
     @NotBlank
