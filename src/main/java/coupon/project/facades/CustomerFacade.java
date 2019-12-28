@@ -84,9 +84,12 @@ public class CustomerFacade extends ClientFacade {
                     }
                 }
             }
-
         }
         return customersCoupons;
+    }
+
+    public List<Coupon> getAllCoupons() {
+        return couponDB.getAllCoupons();
     }
 
 }

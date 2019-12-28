@@ -11,7 +11,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("customer")
-@CrossOrigin(origins = "http://localhost:4200")
 public class CustomerController {
 
     @Autowired
@@ -96,7 +95,7 @@ public class CustomerController {
 
     //used for coupon purchase in web
     @GetMapping("/getCustomerCoupons/{token}")
-    public ResponseEntity<Object> getAllCoupons(@PathVariable String token) {
+    public ResponseEntity<Object> getAllCustomerCoupons(@PathVariable String token) {
         Session session = sessionMap.get(token);
         if (session != null) {
             //each session lasts 1 hour
@@ -104,6 +103,30 @@ public class CustomerController {
                 CustomerFacade customerFacade = (CustomerFacade) session.getClientFacade();
                 try {
                     return ResponseEntity.ok(customerFacade.getCustomerCoupons());
+                } catch (Exception e) {
+                    return ResponseEntity.badRequest().body(e.getMessage());
+                } finally {
+                    //restart session timer after action is done by the user
+                    session.setLastActionTimer(System.currentTimeMillis());
+                }
+            } else {
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Session timeout");
+            }
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Unauthorized login attempt");
+        }
+    }
+
+    //get all coupons in the DB
+    @GetMapping("/getAllCoupons/{token}")
+    public ResponseEntity<Object> getAllCoupons(@PathVariable String token) {
+        Session session = sessionMap.get(token);
+        if (session != null) {
+            //each session lasts 1 hour
+            if (System.currentTimeMillis() - session.getLastAction() < 1000 * 60 * 60) {
+                CustomerFacade customerFacade = (CustomerFacade) session.getClientFacade();
+                try {
+                    return ResponseEntity.ok(customerFacade.getAllCoupons());
                 } catch (Exception e) {
                     return ResponseEntity.badRequest().body(e.getMessage());
                 } finally {

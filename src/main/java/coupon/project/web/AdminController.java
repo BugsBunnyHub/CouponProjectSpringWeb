@@ -12,7 +12,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("admin")
-@CrossOrigin(origins = "http://localhost:4200")
 public class AdminController {
 
     @Autowired
